@@ -1,0 +1,247 @@
+.information {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+.button {
+  background-color: #0075ff;
+  color: white;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.button-2 {
+  background-color: #eee;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+.text-1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.text-2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #888;
+}
+.d-f {
+  display: flex;
+  gap: 20px;
+}
+.f-1 {
+  flex: 1;
+}
+.d-fw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-se {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.p-r {
+  position: relative;
+}
+.br-50 {
+  border-radius: 50%;
+}
+.border {
+  border: 1px solid #ccc;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+.w-f {
+  width: 100%;
+}
+.m-20 {
+  margin: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .mfd-c {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mta-c {
+    text-align: center;
+  }
+  .m-text-1 {
+    font-size: 18px;
+  }
+  .m-text-2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.c-white {
+  color: white;
+}
+.b-blue {
+  background-color: #0075ff;
+}
+.b-orange {
+  background-color: #f59e0b;
+}
+.b-green {
+  background-color: #22c55e;
+}
+.b-red {
+  background-color: #f44336;
+}
+.b-blue-alt {
+  background-color: #0077ff25;
+}
+.b-orange-alt {
+  background-color: #f59f0b25;
+}
+.b-green-alt {
+  background-color: #22c55e25;
+}
+.b-red-alt {
+  background-color: #f4433625;
+}
+.c-blue {
+  color: #0075ff;
+}
+.c-orange {
+  color: #f59e0b;
+}
+.c-green {
+  color: #22c55e;
+}
+.c-red {
+  color: #f44336;
+}
+.c-grey {
+  color: #888;
+}
+.b-twitter {
+  background-color: #1da1f2;
+}
+.b-facebook {
+  background-color: #1877f2;
+}
+.b-youtube {
+  background-color: #ff0000;
+}
+.b-linkedin {
+  background-color: #004182;
+}
+.c-twitter {
+  color: #1da1f2;
+}
+.c-facebook {
+  color: #1877f2;
+}
+.c-youtube {
+  color: #ff0000;
+}
+.c-linkedin {
+  color: #004182;
+}
+.b-twitter-alt {
+  background-color: #1da0f23d;
+}
+.b-facebook-alt {
+  background-color: #1876f23d;
+}
+.b-youtube-alt {
+  background-color: #ff00003d;
+}
+.b-linkedin-alt {
+  background-color: #0041823d;
+}
+
+.check-label {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #0075ff;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.4s;
+}
+.check-label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.check-label::after {
+  font-family: "Font Awesome 7 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: #0075ff;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.check-box {
+  display: none;
+}
+.check-box:checked + .check-label {
+  background-color: #ccc;
+}
+.check-box:checked + .check-label::before {
+  transform: translate(-50px, -50%);
+}
+.check-box:checked + .check-label::after {
+  content: "\f00d";
+  color: #ccc;
+  transform: translate(-52px, -50%);
+}
